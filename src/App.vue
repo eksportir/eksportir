@@ -1,7 +1,9 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" isExactActive>Landing Page - Home</router-link> |
+    <router-link to="/contact">Landing Page - Contact</router-link> |
+    <router-link to="/admin/dashboard">Admin Dashboard</router-link> |
+    <router-link to="/login">Admin Auth</router-link>
   </div>
   <router-view/>
 </template>
