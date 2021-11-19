@@ -1,32 +1,10 @@
 <template>
-  <div id="nav">
-    <router-link to="/" isExactActive>Landing Page - Home</router-link> |
-    <router-link to="/contact">Landing Page - Contact</router-link> |
-    <router-link to="/admin/dashboard">Admin Dashboard</router-link> |
-    <router-link to="/login">Admin Auth</router-link>
-  </div>
   <router-view/>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  name: 'App'
 }
+</script>
+<style></style>
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
