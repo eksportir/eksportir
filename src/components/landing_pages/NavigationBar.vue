@@ -29,10 +29,26 @@
             items-center
           "
         >
-          <li class="text-gray-600 hover:text-gray-900 active">Home</li>
-          <li class="text-gray-600 hover:text-gray-900">Produk</li>
-          <li class="text-gray-600 hover:text-gray-900">Tentang Kami</li>
-          <li class="text-gray-600 hover:text-gray-900">Kontak</li>
+          <li class="text-gray-600 hover:text-gray-900">
+            <router-link to="/" exact>
+              Home
+            </router-link>
+          </li>
+          <li class="text-gray-600 hover:text-gray-900">
+            <router-link to="/product">
+              Produk
+            </router-link>
+          </li>
+          <li class="text-gray-600 hover:text-gray-900">
+            <router-link to="/about">
+              Tentang Kami
+            </router-link>
+          </li>
+          <li class="text-gray-600 hover:text-gray-900">
+            <router-link to="/contact">
+              Kontak
+            </router-link>
+          </li>
           <li class="relative">
             <button
               @click.prevent="menuResponse"
@@ -42,6 +58,7 @@
                 items-center
                 font-semibold
                 rounded-full
+                text-gray-100
                 hover:bg-green-500
                 focus:ring-4 focus:ring-green-300
               "

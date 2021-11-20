@@ -30,6 +30,16 @@ const routes = [
         component: () => import("../views/landing_page/Home.vue"),
       },
       {
+        path: "product",
+        name: "Product",
+        component: () => import("../views/landing_page/Product.vue"),
+      },
+      {
+        path: "about",
+        name: "About",
+        component: () => import("../views/landing_page/AboutCompany.vue"),
+      },
+      {
         path: "contact",
         name: "Contact",
         component: () => import("../views/landing_page/Contact.vue"),
@@ -40,7 +50,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  linkActiveClass: "active",
+  linkExactActiveClass: "active",
   routes,
 });
 
