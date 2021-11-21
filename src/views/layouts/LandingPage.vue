@@ -1,6 +1,8 @@
 <template>
   <div class="bg-gray-200">
-    <navigation-bar :class="{ 'bg-white shadow-md': scrollIsActive > 1 }" />
+    <navigation-bar
+      :class="{ 'bg-transpatent md:bg-white shadow-md': scrollIsActive > 1 }"
+    />
     <router-view />
     <the-footer />
   </div>
@@ -14,7 +16,7 @@ export default {
   name: "LandingPage",
   components: {
     NavigationBar,
-    TheFooter
+    TheFooter,
   },
   data() {
     return {

@@ -10,9 +10,9 @@
       <p class="text-5xl font-bold leading-normal">About Us</p>
     </div>
   </section>
-  <section class="flex py-36 px-6 items-center md:px-10 lg:px-48">
-    <div class="flex items-center justify-between gap-6">
-      <div class="w-2/5">
+  <section class="flex py-20 md:py-36 px-4 items-center md:px-10 lg:px-36">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="w-full md:w-2/5">
         <p class="text-lg text-green-600 font-medium">Ketahui</p>
         <p class="text-4xl font-black">Tentang Kami</p>
         <p class="text-lg font-medium leading-relaxed pt-4">
@@ -22,21 +22,20 @@
           yang kamu temukan pada minuman kopimu.
         </p>
       </div>
-      <div class="w-1/2 relative">
+      <div class="w-full md:w-1/2 relative">
         <div class="w-full h-80 ring-4 ring-green-300 rounded-lg ring-inset"></div>
         <div class="absolute flex items-center justify-center bg-gradient-to-b
           from-green-300
-          to-green-600 shadow-lg rounded-lg w-full h-80 top-6 right-6">
+          to-green-600 shadow-lg rounded-lg w-full h-80 top-0 md:top-6 right-0 md:right-6">
           <img
           src="./../../assets/logo.png"
-          
           alt=""
         />
         </div>
       </div>
     </div>
   </section>
-  <section class="py-36 bg-gray-300 opacity-80 text-center px-6 items-center md:px-10 lg:px-48 ">
+  <section class="py-36 bg-gray-300 opacity-80 text-center px-6 items-center md:px-10 lg:px-36 ">
     <p class="text-2xl font-black">Visi</p>
     <p class="text-2xl font-black">Misi</p>
   </section>

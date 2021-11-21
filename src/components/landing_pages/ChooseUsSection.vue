@@ -1,29 +1,16 @@
 <template>
-  <section class="py-24 sm:px-6 md:px-10 lg:px-48 bg-white">
-    <p class="text-4xl font-black text-center">Kenapa memilih kami?</p>
-    <div class="flex space-x-6 mt-24">
+  <section class="py-24 px-4 md:px-6 lg:px-20 xl:px-36 bg-white">
+    <p class="text-3xl md:text-4xl font-black text-left md:text-center">{{ $t("chooseSection.title") }}</p>
+    <div class="flex flex-col md:flex-row space-x-0 md:space-x-6 space-y-16 md:space-y-0 mt-24">
       <choose-card
-        title="Legal"
-        subtitle="We are legal and certified from our government for business activity and export industries "
+        :title="$t('chooseSection.cardOne.title')"
+        :subtitle="$t('chooseSection.cardOne.subtitle')"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-14 w-14"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-          />
-        </svg>
+        <document-icon />
       </choose-card>
       <choose-card
-        title="Best Price"
-        subtitle="We offer competitive price and best value for your business. Contact for more information"
+        :title="$t('chooseSection.cardTwo.title')"
+        :subtitle="$t('chooseSection.cardTwo.subtitle')"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,30 +28,17 @@
         </svg>
       </choose-card>
       <choose-card
-        title="Trusted"
-        subtitle="You will get best product with good quality ever we have, and best values for any price"
+        :title="$t('chooseSection.cardThree.title')"
+        :subtitle="$t('chooseSection.cardThree.subtitle')"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-14 w-14"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-          />
-        </svg>
+        <dollar-icon />
       </choose-card>
     </div>
   </section>
-  <section class="bg-white pb-10 px-6 md:px-10 lg:px-48">
+  <section class="bg-white pb-10 px-4 mx:px-6 md:px-10 lg:px-36">
     <div
       class="
-        flex
+        flex flex-col md:flex-row
         items-center
         justify-between
         w-full
@@ -72,13 +46,13 @@
         from-green-400
         to-green-600
         rounded-xl
-        px-10
-        py-8
+        px-0 md:px-10
+        py-8 space-y-4 md:space-y-0
       "
     >
-      <div class="w-1/3">
-        <p class="text-4xl text-gray-100 font-bold">
-          Apakah tertarik untuk bekerja sama?
+      <div class="w-full md:w-1/3">
+        <p class="text-3xl md:text-4xl  text-gray-100 font-bold text-center md:text-left">
+          {{ $t("chooseSection.interestedSection") }}
         </p>
       </div>
       <button
@@ -92,7 +66,7 @@
           hover:bg-gray-100 hover:shadow-md
         "
       >
-        Contact Now
+        {{ $t("contactButton") }}
       </button>
     </div>
   </section>
@@ -100,9 +74,10 @@
 
 <script>
 import ChooseCard from './ChooseCard.vue'
-
+import DocumentIcon from "./../icons/DocumentIcon.vue"
+import DollarIcon from "./../icons/DollarIcon.vue"
 export default {
   name: 'ChooseUsSection',
-  components: { ChooseCard }
+  components: { ChooseCard, DocumentIcon, DollarIcon }
 }
 </script>

@@ -80,8 +80,8 @@
       <div
         class="flex px-4 justify-between items-center space-x-4 border-t-2 pt-2"
       >
-        <button class="flex-1 py-2 bg-green-200">B. Indonesia</button>
-        <button class="flex-1 py-2 bg-green-200">English</button>
+        <button class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">B. Indonesia</button>
+        <button class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">English</button>
       </div>
     </div>
   </nav>

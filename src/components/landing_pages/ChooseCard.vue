@@ -1,16 +1,6 @@
 <template>
-  <div class="w-1/3 group">
-    <div
-      class="
-        bg-white
-        rounded-3xl
-        group-hover:shadow-lg
-        border
-        px-10
-        py-20
-        space-y-2
-      "
-    >
+  <div class="w-full md:w-1/3">
+    <div class="card-wrapper transform transition duration-500 hover:scale-105 hover:shadow-lg">
       <div
         class="
           bg-gradient-to-b
@@ -43,3 +33,15 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss">
+.card-wrapper {
+  @apply bg-gray-50
+        rounded-3xl
+        group-hover:shadow-lg
+        border
+        px-10
+        py-20
+        space-y-2;
+}
+</style>

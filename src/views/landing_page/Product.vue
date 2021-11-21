@@ -12,12 +12,12 @@
     </div>
   </section>
 
-  <section class="px-6 py-32 md:px-10 lg:px-48 space-y-6">
+  <section class="px-4 py-20 md:py-32 md:px-10 lg:px-36 space-y-6">
     <div class="w-1/3 pb-4">
       <p class="text-lg font-medium text-gray-600">Let's check</p>
       <p class="text-4xl font-black text-green-900">All PRODUCT</p>
     </div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="flex flex-col h-full max-w-lg mx-auto bg-white shadow hover:shadow-xl cursor-pointer duration-700 rounded-lg">
         <img
           class="rounded-lg rounded-b-none"
