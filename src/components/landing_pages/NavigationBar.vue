@@ -2,9 +2,9 @@
   <nav class="fixed top-0 py-2 w-full z-20 bg-white md:bg-transparent">
     <div class="nav-wrapper">
       <div class="flex-none">
-        <a href="">
+        <router-link to="/">
           <img class="w-24" src="./../../assets/logo.png" alt="" />
-        </a>
+        </router-link>
       </div>
       <div class="block md:hidden">
         <div @click="menuMobile">
@@ -56,22 +56,22 @@
     <!-- Mobile Menu -->
     <div v-if="menuMobileState" class="block md:hidden border-t-2">
       <div class="grid gap-2 w-full p-4">
-        <div class="w-full py-1">
+        <div class="w-full py-1" @click="menuMobile">
           <router-link to="/" class="w-min text-xl">{{
             $t("menu[0]")
           }}</router-link>
         </div>
-        <div class="w-full py-1">
+        <div class="w-full py-1" @click="menuMobile">
           <router-link to="/product" class="w-min text-xl">{{
             $t("menu[1]")
           }}</router-link>
         </div>
-        <div class="w-full py-1">
+        <div class="w-full py-1" @click="menuMobile">
           <router-link to="/about" class="w-min text-xl">{{
             $t("menu[2]")
           }}</router-link>
         </div>
-        <div class="w-full py-1">
+        <div class="w-full py-1" @click="menuMobile">
           <router-link to="/contact" class="w-min text-xl">{{
             $t("menu[3]")
           }}</router-link>

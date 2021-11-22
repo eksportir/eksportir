@@ -4,17 +4,16 @@
       <div class="flex flex-col md:flex-row items-start justify-between gap-10">
         <div class="flex-1">
           <img src="./../../assets/logo.png" alt="" />
-          <p>Jl. Bandung No 12, Selatpanjang Timur</p>
-          <p>Kab. Kepulauan Meranti, Riau Indonesia</p>
-          <p>28753</p>
+          <p>{{ $t("address") }}</p>
+          <p>{{ $t("city") }}</p>
         </div>
         <div class="">
           <p class="text-xl font-semibold text-gray-900">Menu</p>
           <ul class="gap-4 text-lg font-light space-y-1 mt-2 text-gray-800 cursor-pointer">
-            <li class="hover:text-white hover:underline">Home</li>
-            <li class="hover:text-white hover:underline">Produk</li>
-            <li class="hover:text-white hover:underline">Tentang Kami</li>
-            <li class="hover:text-white hover:underline">Kontak</li>
+            <li class="hover:text-white hover:underline">{{ $t("menu[0]") }}</li>
+            <li class="hover:text-white hover:underline">{{ $t("menu[1]") }}</li>
+            <li class="hover:text-white hover:underline">{{ $t("menu[2]") }}</li>
+            <li class="hover:text-white hover:underline">{{ $t("menu[3]") }}</li>
           </ul>
         </div>
         <div class="">

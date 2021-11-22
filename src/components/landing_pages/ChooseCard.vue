@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full md:w-1/3">
-    <div class="card-wrapper transform transition duration-500 hover:scale-105 hover:shadow-lg">
+  <div class="flex flex-col w-full md:w-1/3">
+    <div class="flex-1 card-wrapper transform transition duration-500 hover:scale-105 hover:shadow-lg">
       <div
         class="
           bg-gradient-to-b

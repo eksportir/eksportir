@@ -7,14 +7,16 @@
         background-image: url(https://source.unsplash.com/TD4DBagg2wE/1600x700);
       "
     >
-      <p class="text-5xl font-bold leading-normal">About Us</p>
+      <p class="text-5xl font-bold leading-normal">{{
+            $t("menu[2]")
+          }}</p>
     </div>
   </section>
   <section class="flex py-20 md:py-36 px-4 items-center md:px-10 lg:px-36">
     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="w-full md:w-2/5">
-        <p class="text-lg text-green-600 font-medium">Ketahui</p>
-        <p class="text-4xl font-black">Tentang Kami</p>
+        <p class="text-lg text-green-600 font-medium">Know</p>
+        <p class="text-4xl font-black">About Us </p>
         <p class="text-lg font-medium leading-relaxed pt-4">
           Hasil roasting ini menghasilkan biji berwarna hitam mengkilap dengan
           permukaan biji yang berminyak dan rasa sangat pahit ketika dikecap.

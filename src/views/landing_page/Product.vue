@@ -7,15 +7,15 @@
         background-image: url(https://source.unsplash.com/TD4DBagg2wE/1600x700);
       "
     >
-      <p class="text-5xl font-bold leading-normal">Explore</p>
-      <p class="text-5xl font-bold">Our Products</p>
+      <p class="text-5xl font-bold leading-normal">{{ $t("productsNav") }}</p>
+      <p class="text-5xl font-bold">{{ $t("productsNav2") }}</p>
     </div>
   </section>
 
   <section class="px-4 py-20 md:py-32 md:px-10 lg:px-36 space-y-6">
     <div class="w-1/3 pb-4">
-      <p class="text-lg font-medium text-gray-600">Let's check</p>
-      <p class="text-4xl font-black text-green-900">All PRODUCT</p>
+      <p class="text-lg font-medium text-gray-600">{{ $t("productSection.smallTitle") }}</p>
+      <p class="text-4xl font-black text-green-900">{{ $t("productSection.bigTitle") }}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="flex flex-col h-full max-w-lg mx-auto bg-white shadow hover:shadow-xl cursor-pointer duration-700 rounded-lg">

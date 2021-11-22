@@ -1,11 +1,9 @@
 <template>
   <div class="bg-white pb-32">
     <section class="pt-36 pb-48 bg-green-100">
-      <div class="w-full px-4 flex flex-col items-center justify-center">
-        <p class="font-bold text-4xl">Get In Touch</p>
-        <p class="text-center">
-          Contact us if your have any inquiry or anything about business
-        </p>
+      <div class="w-full px-4 space-y-2 flex flex-col items-center justify-center">
+        <p class="font-bold text-4xl">{{ $t("getTouchSection.mainTitle") }}</p>
+        <p class="text-center">{{ $t("getTouchSection.mainTitleSub") }}</p>
       </div>
     </section>
     <div
@@ -37,9 +35,9 @@
           space-y-1
         "
       >
-        <p class="text-2xl font-medium">Contact Information</p>
+        <p class="text-2xl font-medium">{{ $t("contactPage.contactInformation") }}</p>
         <p class="font-light">
-          Jl. Utama No 12, Selatpanjang Timur, Kab. Kepulauan Meranti
+          {{ $t("address") }}
         </p>
         <div class="flex items-center pt-4 space-x-3">
           <svg
@@ -62,7 +60,7 @@
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <p class="font-semibold">Provinsi Riau, Indonesia</p>
+          <p class="font-semibold">{{ $t("contactPage.regency") }}</p>
         </div>
         <div class="flex items-center pt-4 space-x-3">
           <svg
@@ -101,7 +99,7 @@
       </div>
       <div class="w-full md:w-2/3 px-2 md:px-20 py-10 md:py-10 space-y-2">
         <div class="w-full space-y-1">
-          <p>Nama</p>
+          <p>{{ $t("getTouchSection.name") }}</p>
           <input
             class="
               rounded-lg
@@ -118,7 +116,7 @@
           />
         </div>
         <div class="w-full space-y-1">
-          <p>Email</p>
+          <p>{{ $t("getTouchSection.mail") }}</p>
           <input
             class="
               rounded-lg
@@ -135,7 +133,7 @@
           />
         </div>
         <div class="w-full space-y-1">
-          <p>Message</p>
+          <p>{{ $t("getTouchSection.message") }}</p>
           <textarea
             rows="4"
             class="
@@ -163,7 +161,7 @@
             hover:bg-green-500 hover:shadow-md
           "
         >
-          Kirim
+          {{ $t("getTouchSection.submit") }}
         </button>
       </div>
     </div>
