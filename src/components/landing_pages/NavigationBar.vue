@@ -80,8 +80,8 @@
       <div
         class="flex px-4 justify-between items-center space-x-4 border-t-2 pt-2"
       >
-        <button class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">B. Indonesia</button>
-        <button class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">English</button>
+        <button @click="changeLang('id')" :class="activeLang == 'id' ? 'bg-green-400' : 'bg-green-100'" class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">B. Indonesia</button>
+        <button @click="changeLang('en')" :class="activeLang == 'en' ? 'bg-green-400' : 'bg-green-100'"  class="flex-1 py-2 rounded-lg bg-green-100 font-medium focus:bg-green-400 focus:ring-4 ring-green-300 ring-inset">English</button>
       </div>
     </div>
   </nav>
@@ -96,6 +96,7 @@ export default {
   components: { LanguageIcon, ChevronDown, MenuIcon },
   data() {
     return {
+      activeLang: this.$i18n.getLocale(),
       dropdown: false,
       menuMobileState: false,
     };
@@ -104,6 +105,8 @@ export default {
     changeLang(lang) {
       this.$i18n.setLocale(lang);
       this.menuResponse();
+      this.menuMobile();
+      this.activeLang = lang;
     },
     menuResponse() {
       this.dropdown = !this.dropdown;
@@ -114,10 +117,8 @@ export default {
     close(e) {
       if (!this.$el.contains(e.target)) {
         this.dropdown = false;
+        this.menuMobileState = false;
       }
-    },
-    lang: function () {
-      console.log("Indonesiea");
     },
   },
   mounted() {
