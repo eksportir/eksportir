@@ -136,7 +136,7 @@ export default {
 }
 
 .lang-button {
-  @apply flex px-3 py-1 bg-green-400 items-center font-semibold rounded-full text-gray-100 hover:bg-green-500 focus:ring-4 focus:ring-green-300;
+  @apply flex px-3 py-1 bg-green-400 items-center font-semibold rounded-full text-green-900 hover:bg-green-500 focus:ring-4 focus:ring-green-300;
 }
 
 .nav-wrapper {

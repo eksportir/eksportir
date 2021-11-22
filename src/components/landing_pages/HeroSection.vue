@@ -13,20 +13,8 @@
           class="explore-btn"
         >
           <span>{{ $t("heroSection.ExploreButton") }}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"
-            />
-          </svg>
+          <!-- <right-arrow-icon /> -->
+          <righ-arrow-icon/>
         </button>
       </div>
     </div>
@@ -39,39 +27,21 @@
 </template>
 
 <script>
+import RighArrowIcon from './../icons/RightArrowIcon.vue'
+
 export default {
-  name: 'HeroSection'
+  name: 'HeroSection',
+  components: { RighArrowIcon }
 };
 </script>
 
 <style lang="postcss">
 .started-btn {
-  @apply px-4
-            py-2
-            bg-gradient-to-b
-            from-green-400
-            to-green-500
-            hover:shadow-md
-            font-semibold
-            rounded-full
-            hover:bg-green-500
-            focus:ring-4 focus:ring-green-300
-            text-white
+  @apply px-4 py-2 bg-gradient-to-b from-green-400 to-green-500 hover:shadow-md font-semibold rounded-full hover:bg-green-500 focus:ring-4 focus:ring-green-300 text-white
 }
 
 .explore-btn {
-  @apply flex
-            items-center
-            px-4
-            py-2
-            bg-green-50
-            text-green-600
-            hover:shadow-md
-            font-semibold
-            rounded-full
-            hover:bg-green-400 hover:text-white
-            ring-2 ring-green-400
-            ring-inset;
+  @apply flex items-center px-4 py-2 bg-green-50 text-green-600 hover:shadow-md font-semibold rounded-full hover:bg-green-400 hover:text-white ring-2 ring-green-400 ring-inset;
 }
 
 .order {

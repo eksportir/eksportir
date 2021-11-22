@@ -9,14 +9,14 @@
         <div class="absolute left-0 z-10">
           <img
             src="./../../assets/tree.jpg"
-            class="w-1/2 -mt-6 rounded-lg shadow-lg"
+            class="w-2/3 xl:w-1/2 -mt-6 rounded-lg shadow-lg"
             alt=""
           />
         </div>
         <div class="absolute flex w-full justify-end z-10">
           <img
             src="./../../assets/green.jpg"
-            class="w-1/2 h-58 object-cover mt-64 mr-16 rounded-lg shadow-lg"
+            class="w-2/3 xl:w-1/2 h-58 object-cover mt-64 mr-16 rounded-lg shadow-lg"
             alt=""
           />
         </div>
@@ -42,7 +42,6 @@
         <p class="text-lg font-medium leading-relaxed pt-4">{{ $t("productSection.variantDescription") }}</p>
       </div>
       <div class="block md:hidden">
-        
         <img
           src="./../../assets/green.jpg"
           class="rounded-lg shadow-md w-full"
@@ -65,15 +64,7 @@
         <p class="text-4xl text-center md:text-left text-gray-100 font-bold">{{ $t("productSection.getProductTitle") }}</p>
       </div>
       <button
-        class="
-          px-6
-          py-3
-          bg-white
-          text-green-600
-          rounded-full
-          font-bold
-          hover:bg-gray-100 hover:shadow-md
-        "
+        class="phil-white-button"
       >
         {{ $t("contactButton") }}
       </button>

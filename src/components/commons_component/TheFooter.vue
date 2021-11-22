@@ -27,8 +27,8 @@
       </div>
     </div>
     <div class="bg-green-700 py-2">
-      <p class="text-center text-lg font-medium text-gray-100">
-        S. Eksportir &copy; 2021 Allright Reserved
+      <p class="text-center text-lg font-medium text-green-50">
+        S. Eksportir &copy; 2021 &bull; All Right Reserved
       </p>
     </div>
   </footer>

@@ -14,15 +14,19 @@
 
   <section class="px-4 py-20 md:py-32 md:px-10 lg:px-36 space-y-6">
     <div class="w-1/3 pb-4">
-      <p class="text-lg font-medium text-gray-600">{{ $t("productSection.smallTitle") }}</p>
-      <p class="text-4xl font-black text-green-900">{{ $t("productSection.bigTitle") }}</p>
+      <p class="text-lg font-medium text-gray-600">
+        {{ $t("productSection.smallTitle") }}
+      </p>
+      <p class="text-4xl font-black text-green-900">
+        {{ $t("productSection.bigTitle") }}
+      </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="flex flex-col h-full max-w-lg mx-auto bg-white shadow hover:shadow-xl cursor-pointer duration-700 rounded-lg">
+      <div class="product-card-wrapper">
         <img
           class="rounded-lg rounded-b-none"
           src="https://source.unsplash.com/BXF8PUmBt9E/1920x1280"
-          alt="thumbnail"
+          alt="product image"
           loading="lazy"
         />
         <div class="p-4 space-y-2">
@@ -31,30 +35,15 @@
             Tailwind CSS v2.1 introduces a new just-in-time compiler for
             Tailwind CSS that generates your styles on-demand...
           </p>
-          <button
-            class="
-              flex
-              px-3
-              py-1
-              bg-green-400
-              items-center
-              font-semibold
-              rounded-full
-              text-gray-100
-              hover:bg-green-500
-              focus:ring-4 focus:ring-green-300
-            "
-          >
-            Selengkapnya
-          </button>
+          <button class="product-button">Selengkapnya</button>
         </div>
       </div>
 
-      <div class="flex flex-col h-full max-w-lg mx-auto bg-white shadow hover:shadow-xl cursor-pointer duration-700 rounded-lg">
+      <div class="product-card-wrapper">
         <img
           class="rounded-lg rounded-b-none"
           src="https://source.unsplash.com/6D71rfz7j1E/1920x1280"
-          alt="thumbnail"
+          alt="product image"
           loading="lazy"
         />
         <div class="p-4 space-y-2">
@@ -63,30 +52,15 @@
             Tailwind CSS v2.1 introduces a new just-in-time compiler for
             Tailwind CSS that generates your styles on-demand...
           </p>
-          <button
-            class="
-              flex
-              px-3
-              py-1
-              bg-green-400
-              items-center
-              font-semibold
-              rounded-full
-              text-gray-100
-              hover:bg-green-500
-              focus:ring-4 focus:ring-green-300
-            "
-          >
-            Selengkapnya
-          </button>
+          <button class="product-button">Selengkapnya</button>
         </div>
       </div>
 
-      <div class="flex flex-col h-full max-w-lg mx-auto bg-white shadow hover:shadow-xl cursor-pointer duration-700 rounded-lg">
+      <div class="product-card-wrapper">
         <img
           class="rounded-lg rounded-b-none"
           src="https://source.unsplash.com/8I0SAYz0PIs/1920x1280"
-          alt="thumbnail"
+          alt="product image"
           loading="lazy"
         />
         <div class="px-4 py-5 space-y-2">
@@ -95,22 +69,7 @@
             Tailwind CSS v2.1 introduces a new just-in-time compiler for
             Tailwind CSS that generates your styles on-demand...
           </p>
-          <button
-            class="
-              flex
-              px-3
-              py-1
-              bg-green-400
-              items-center
-              font-semibold
-              rounded-full
-              text-gray-100
-              hover:bg-green-500
-              focus:ring-4 focus:ring-green-300
-            "
-          >
-            Selengkapnya
-          </button>
+          <button class="product-button">Selengkapnya</button>
         </div>
       </div>
     </div>
@@ -123,3 +82,31 @@ export default {
   components: {},
 };
 </script>
+
+<style lang="postcss">
+.product-card-wrapper {
+  @apply flex flex-col
+          h-full
+          max-w-lg
+          mx-auto
+          bg-white
+          shadow
+          hover:shadow-xl
+          cursor-pointer
+          duration-700
+          rounded-lg;
+}
+
+.product-button {
+  @apply flex
+              px-3
+              py-1
+              bg-green-400
+              items-center
+              font-semibold
+              rounded-full
+              text-green-900
+              hover:bg-green-500
+              focus:ring-4 focus:ring-green-300;
+}
+</style>
