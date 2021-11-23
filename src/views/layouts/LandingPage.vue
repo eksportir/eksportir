@@ -40,11 +40,11 @@ export default {
               ring-inset
               focus:outline-none
               focus:ring-2
-              focus:ring-green-200
+              focus:ring-green-400
               focus:border-transparent
-              bg-gray-100
+              bg-gray-200
               px-4
-              py-2
+              py-3
               w-full
 }
 

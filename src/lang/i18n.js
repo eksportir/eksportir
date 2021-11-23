@@ -59,6 +59,7 @@ const messages = {
       submit: "Send",
     },
     contactPage: {
+      mainTitleSub: "Contact us if your have any inquiry or anything about business",
       contactInformation: "Contact Information",
       regency: "Province Riau, Indonesia",
       phone: "+628 0000 0000",
@@ -123,6 +124,7 @@ const messages = {
       submit: "Kirim",
     },
     contactPage: {
+      mainTitleSub: "Hubungi kami jika Anda memiliki pertanyaan atau apa pun tentang bisnis",
       contactInformation: "Informasi Kontak",
       regency: "Provinsi Riau, Indonesia",
       phone: "+628 0000 0000",

@@ -4,7 +4,7 @@
     <div
       class="bg-local bg-blend-darken py-28 text-center text-white"
       style="
-        background-image: url(https://source.unsplash.com/TD4DBagg2wE/1600x700);
+        background-image: url(https://ik.imagekit.io/n0t5masg5jg/bg_coffee_v1uve0BSv.jfif?updatedAt=1637636563607);
       "
     >
       <p class="text-5xl font-bold leading-normal">{{ $t("productsNav") }}</p>
@@ -25,21 +25,20 @@
       <div class="product-card-wrapper">
         <img
           class="rounded-lg rounded-b-none"
-          src="https://source.unsplash.com/BXF8PUmBt9E/1920x1280"
+          src="./../../assets/green_bean_meranti.jpg"
           alt="product image"
           loading="lazy"
         />
         <div class="p-4 space-y-2">
           <h1 class="text-2xl font-bold text-green-900">Biji Kopi Liberika</h1>
-          <p class="font-normal leading-5 tracking-wide">
-            Tailwind CSS v2.1 introduces a new just-in-time compiler for
-            Tailwind CSS that generates your styles on-demand...
+          <p class="font-normal leading-5">
+            Merupakan salah satu biji kopi di kepulauan meranti, biji kopi berjenis liberika ini memiliki aroma yang khas yaitu aroma nangka dan coklat.
           </p>
-          <button class="product-button">Selengkapnya</button>
+          <!-- <button class="product-button">Selengkapnya</button> -->
         </div>
       </div>
 
-      <div class="product-card-wrapper">
+      <!-- <div class="product-card-wrapper">
         <img
           class="rounded-lg rounded-b-none"
           src="https://source.unsplash.com/6D71rfz7j1E/1920x1280"
@@ -48,7 +47,7 @@
         />
         <div class="p-4 space-y-2">
           <h1 class="text-2xl font-bold text-green-900">Stem Charcoal</h1>
-          <p class="font-normal leading-5 tracking-wide">
+          <p class="font-normal leading-5">
             Tailwind CSS v2.1 introduces a new just-in-time compiler for
             Tailwind CSS that generates your styles on-demand...
           </p>
@@ -65,13 +64,13 @@
         />
         <div class="px-4 py-5 space-y-2">
           <h1 class="text-2xl font-bold text-green-900">Karet</h1>
-          <p class="font-normal leading-5 tracking-wide">
+          <p class="font-normal leading-5">
             Tailwind CSS v2.1 introduces a new just-in-time compiler for
             Tailwind CSS that generates your styles on-demand...
           </p>
           <button class="product-button">Selengkapnya</button>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

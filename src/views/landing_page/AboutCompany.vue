@@ -4,7 +4,7 @@
     <div
       class="bg-local bg-blend-darken py-28 text-center text-white"
       style="
-        background-image: url(https://source.unsplash.com/TD4DBagg2wE/1600x700);
+        background-image: url(https://ik.imagekit.io/n0t5masg5jg/bg_coffee_v1uve0BSv.jfif?updatedAt=1637636563607);
       "
     >
       <p class="text-5xl font-bold leading-normal">{{ $t("menu[2]") }}</p>

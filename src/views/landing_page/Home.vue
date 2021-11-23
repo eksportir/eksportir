@@ -24,12 +24,6 @@ export default {
 
 <style lang="postcss">
 .phil-white-button {
-  @apply px-6
-          py-3
-          bg-white
-          text-green-600
-          rounded-full
-          font-bold
-          hover:bg-gray-100 hover:shadow-md
+  @apply px-6 py-3 bg-white text-green-600 rounded-full font-bold hover:bg-gray-100 hover:shadow-md
 } 
 </style>

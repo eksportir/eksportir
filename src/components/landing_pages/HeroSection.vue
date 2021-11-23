@@ -20,7 +20,7 @@
     </div>
     <div class="order flex-1 pb-8 md:pb-0">
       <div class="w-full text-center bg-white rounded-md shadow-lg">
-        <img src="https://source.unsplash.com/BXF8PUmBt9E/1920x1280" class="object-cover w-full rounded-md" alt="">
+        <img src="./../../assets/liberika_meranti.jpg" class="object-cover w-full rounded-md" alt="">
       </div>
     </div>
   </section>

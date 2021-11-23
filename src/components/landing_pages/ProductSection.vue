@@ -8,14 +8,14 @@
       <div class="hidden md:flex relative w-2/3 justify-center">
         <div class="absolute left-0 z-10">
           <img
-            src="./../../assets/tree.jpg"
+            src="./../../assets/biji_kopi_meranti.jpg"
             class="w-2/3 xl:w-1/2 -mt-6 rounded-lg shadow-lg"
             alt=""
           />
         </div>
         <div class="absolute flex w-full justify-end z-10">
           <img
-            src="./../../assets/green.jpg"
+            src="./../../assets/orang_meranti_kopi.jpg"
             class="w-2/3 xl:w-1/2 h-58 object-cover mt-64 mr-16 rounded-lg shadow-lg"
             alt=""
           />
@@ -29,7 +29,7 @@
       </div>
       <div class="pt-10 pb-12">
         <img
-        src="./../../assets/green.jpg"
+        src="./../../assets/orang_meranti_kopi.jpg"
         class="block md:hidden w-full object-cover rounded-lg shadow-lg"
         alt=""
       />
@@ -43,7 +43,7 @@
       </div>
       <div class="block md:hidden">
         <img
-          src="./../../assets/green.jpg"
+          src="./../../assets/green_bean_meranti.jpg"
           class="rounded-lg shadow-md w-full"
           alt=""
         />
@@ -51,7 +51,7 @@
       <div class="hidden md:block w-2/5 relative">
         <div class="w-full h-64 rounded-lg ring-4 ring-green-300 ring-inset"></div>
         <img
-          src="./../../assets/green.jpg"
+          src="./../../assets/green_bean_meranti.jpg"
           class="absolute rounded-lg shadow-md w-full h-64 top-6 right-6"
           alt=""
         />

@@ -9,16 +9,16 @@
         </div>
         <div class="">
           <p class="text-xl font-semibold text-gray-900">Menu</p>
-          <ul class="gap-4 text-lg font-light space-y-1 mt-2 text-gray-800 cursor-pointer">
-            <li class="hover:text-white hover:underline">{{ $t("menu[0]") }}</li>
-            <li class="hover:text-white hover:underline">{{ $t("menu[1]") }}</li>
-            <li class="hover:text-white hover:underline">{{ $t("menu[2]") }}</li>
-            <li class="hover:text-white hover:underline">{{ $t("menu[3]") }}</li>
+          <ul class="flex flex-col text-lg font-light space-y-1 mt-2 text-gray-800 cursor-pointer">
+            <a href="/" class="hover:text-white hover:underline">{{ $t("menu[0]") }}</a>
+            <a href="/product" class="hover:text-white hover:underline">{{ $t("menu[1]") }}</a>
+            <a href="/about" class="hover:text-white hover:underline">{{ $t("menu[2]") }}</a>
+            <a href="/contact" class="hover:text-white hover:underline">{{ $t("menu[3]") }}</a>
           </ul>
         </div>
         <div class="">
           <p class="text-xl font-semibold text-gray-900">Social Media</p>
-          <ul class="gap-4 text-lg font-light space-y-1 mt-2 text-gray-800 cursor-pointer">
+          <ul class="flex flex-col text-lg font-light space-y-1 mt-2 text-gray-800 cursor-pointer">
             <li class="hover:text-white hover:underline">Facebook</li>
             <li class="hover:text-white hover:underline">Instagram</li>
             <li class="hover:text-white hover:underline">Whatsapp</li>
