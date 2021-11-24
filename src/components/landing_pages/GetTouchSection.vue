@@ -29,7 +29,7 @@
           <a target="_blank" href="https://instagram.com/s.eksportir" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
             <img src="./../../assets/instagram.png" class="w-6" alt="instagram icon" />
           </a>
-          <a target="_blank" href="08901920313" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
+          <a target="_blank" href="https://wa.me/+6282170548877" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
             <img src="./../../assets/whatsapp.png" class="w-6" alt="whatsapp icon" />
           </a>
         </div>
