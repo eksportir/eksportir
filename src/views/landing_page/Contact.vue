@@ -126,7 +126,7 @@ export default {
       if (this.nama && this.email && this.pesan) {
         this.loading = !this.loading;
         try {
-          await addDoc(collection(db, "pesans"), {
+          await addDoc(collection(db, "messages"), {
             name: this.nama,
             mail: this.email,
             message: this.pesan,

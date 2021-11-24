@@ -4,18 +4,17 @@
       <p class="text-4xl md:text-4xl xl:text-5xl font-black">{{ $t("heroSection.title") }}</p>
       <p class="w-full md:w-10/12 text-lg pb-4">{{ $t("heroSection.subtitle") }}</p>
       <div class="flex justify-center md:justify-start space-x-2">
-        <button
+        <a href="/contact"
           class="started-btn"
         >
           {{ $t("heroSection.getStartedButton") }}
-        </button>
-        <button
+        </a>
+        <a href="#product"
           class="explore-btn"
         >
           <span>{{ $t("heroSection.ExploreButton") }}</span>
-          <!-- <right-arrow-icon /> -->
           <righ-arrow-icon/>
-        </button>
+        </a>
       </div>
     </div>
     <div class="order flex-1 pb-8 md:pb-0">
@@ -37,7 +36,7 @@ export default {
 
 <style lang="postcss">
 .started-btn {
-  @apply px-4 py-2 bg-gradient-to-b from-green-400 to-green-500 hover:shadow-md font-semibold rounded-full hover:bg-green-500 focus:ring-4 focus:ring-green-300 text-white
+  @apply px-4 py-2 bg-gradient-to-b from-green-400 to-green-500 hover:shadow-md font-semibold rounded-full hover:bg-green-500 focus:ring-4 focus:ring-green-300 ring-inset text-white
 }
 
 .explore-btn {

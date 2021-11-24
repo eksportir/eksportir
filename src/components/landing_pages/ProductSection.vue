@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-20 pb-40 px-6 md:px-10 lg:px-36 space-y-4 md:space-y-20">
+  <section class="pt-20 pb-40 px-6 md:px-10 lg:px-36 space-y-4 md:space-y-20" id="product">
     <div class="w-1/3 border-b-2 border-green-700 pb-4">
       <p class="text-lg font-medium text-gray-600">{{ $t("productSection.smallTitle") }}</p>
       <p class="text-4xl font-black text-green-900">{{ $t("productSection.bigTitle") }}</p>
@@ -63,11 +63,11 @@
       <div class="w-full md:w-1/3">
         <p class="text-4xl text-center md:text-left text-gray-100 font-bold">{{ $t("productSection.getProductTitle") }}</p>
       </div>
-      <button
+      <a href="/contact"
         class="phil-white-button"
       >
         {{ $t("contactButton") }}
-      </button>
+      </a>
     </div>
   </section>
 </template>

@@ -14,6 +14,7 @@
             <a href="/product" class="hover:text-white hover:underline">{{ $t("menu[1]") }}</a>
             <a href="/about" class="hover:text-white hover:underline">{{ $t("menu[2]") }}</a>
             <a href="/contact" class="hover:text-white hover:underline">{{ $t("menu[3]") }}</a>
+            <a href="/admin" class="hover:text-white hover:underline">Administrator</a>
           </ul>
         </div>
         <div class="">

@@ -31,9 +31,9 @@
           {{ $t("chooseSection.interestedSection") }}
         </p>
       </div>
-      <button class="phil-white-button">
+      <a href="/contact" class="phil-white-button">
         {{ $t("contactButton") }}
-      </button>
+      </a>
     </div>
   </section>
 </template>

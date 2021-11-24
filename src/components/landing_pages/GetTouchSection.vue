@@ -18,20 +18,20 @@
         <p class="text-lg font-medium leading-snug">
           {{ $t("getTouchSection.subtitle") }}
         </p>
-        <div class="flex w-full gap-2">
-          <div class="w-14 bg-white rounded-full hover:shadow-md p-4">
+        <div class="flex w-full gap-4">
+          <a target="_blank" href="https://facebook.com/s.eksportir" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
             <img
               src="./../../assets/icons8-facebook-f-500.png"
-              class=""
-              alt=""
+              class="w-6"
+              alt="facebook icon"
             />
-          </div>
-          <div class="w-14 bg-white rounded-full hover:shadow-md p-4">
-            <img src="./../../assets/instagram.png" class="" alt="" />
-          </div>
-          <div class="w-14 bg-white rounded-full hover:shadow-md p-4">
-            <img src="./../../assets/whatsapp.png" class="" alt="" />
-          </div>
+          </a>
+          <a target="_blank" href="https://instagram.com/s.eksportir" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
+            <img src="./../../assets/instagram.png" class="w-6" alt="instagram icon" />
+          </a>
+          <a target="_blank" href="08901920313" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
+            <img src="./../../assets/whatsapp.png" class="w-6" alt="whatsapp icon" />
+          </a>
         </div>
       </div>
       <div class="form-wrapper">
@@ -161,9 +161,5 @@ export default {
 
 .text-error {
   @apply text-red-400 font-medium;
-}
-
-.text-error-span {
-  @apply mb-2 text-xs text-red-400;
 }
 </style>
