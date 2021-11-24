@@ -13,7 +13,8 @@
   </section>
 
   <section class="px-4 py-20 md:py-32 md:px-10 lg:px-36 space-y-6">
-    <div class="w-1/3 pb-4">
+    <div
+    >
       <p class="text-lg font-medium text-gray-600">
         {{ $t("productSection.smallTitle") }}
       </p>
@@ -22,7 +23,9 @@
       </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="product-card-wrapper">
+      <div
+        class="product-card-wrapper"
+      >
         <img
           class="rounded-lg rounded-b-none"
           src="./../../assets/green_bean_meranti.jpg"
@@ -32,7 +35,9 @@
         <div class="p-4 space-y-2">
           <h1 class="text-2xl font-bold text-green-900">Biji Kopi Liberika</h1>
           <p class="font-normal leading-5">
-            Merupakan salah satu biji kopi di kepulauan meranti, biji kopi berjenis liberika ini memiliki aroma yang khas yaitu aroma nangka dan coklat.
+            Merupakan salah satu biji kopi di kepulauan meranti, biji kopi
+            berjenis liberika ini memiliki aroma yang khas yaitu aroma nangka
+            dan coklat.
           </p>
           <!-- <button class="product-button">Selengkapnya</button> -->
         </div>

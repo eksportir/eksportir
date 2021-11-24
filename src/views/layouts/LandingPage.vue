@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import sal from 'sal.js';
 import NavigationBar from "./../../components/landing_pages/NavigationBar.vue";
 import TheFooter from "./../../components/commons_component/TheFooter.vue";
 
@@ -29,6 +30,7 @@ export default {
     },
   },
   mounted() {
+    sal();
     window.addEventListener("scroll", this.updateScroll);
   },
 };

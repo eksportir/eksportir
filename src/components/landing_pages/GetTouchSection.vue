@@ -1,6 +1,10 @@
 <template>
   <section class="py-20 px-4 md:px-6 lg:px-36 space-y-10 md:space-y-20">
-    <p class="text-4xl font-black text-center">
+    <p class="text-4xl font-black text-center"
+    data-sal="fade"
+    data-sal-delay="300"
+    data-sal-duration="800"
+    data-sal-easing="ease-out-bounce">
       {{ $t("getTouchSection.mainTitle") }}
     </p>
     <div
@@ -13,7 +17,11 @@
         md:space-y-0
       "
     >
-      <div class="w-full md:w-1/3 space-y-2">
+      <div class="w-full md:w-1/3 space-y-2"
+      data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-duration="800"
+    data-sal-easing="ease-out-bounce">
         <p class="text-2xl font-bold">{{ $t("getTouchSection.title") }}</p>
         <p class="text-lg font-medium leading-snug">
           {{ $t("getTouchSection.subtitle") }}
@@ -34,7 +42,10 @@
           </a>
         </div>
       </div>
-      <div class="form-wrapper">
+      <div class="form-wrapper" data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-duration="800"
+    data-sal-easing="ease-out-bounce">
         <!-- Empty State -->
         <div
           v-if="isSending"
@@ -48,7 +59,7 @@
         </div>
         <!-- Form -->
         <loading v-if="loading" class="w-full" />
-        <div v-if="!loading && !isSending" class="p-4 space-y-2">
+        <div v-if="!loading && !isSending" class="p-4 space-y-2" >
           <p>{{ firebaseError }}</p>
           <div class="w-full space-y-1">
             <p :class="errors.includes('name') ? 'text-error' : ''">
