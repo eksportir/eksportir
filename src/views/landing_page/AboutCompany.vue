@@ -6,23 +6,29 @@
       style="
         background-image: url(https://ik.imagekit.io/n0t5masg5jg/bg_coffee_v1uve0BSv.jfif?updatedAt=1637636563607);
       "
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce"
     >
       <p class="text-5xl font-bold leading-normal">{{ $t("menu[2]") }}</p>
     </div>
   </section>
   <section class="flex py-20 md:py-36 px-4 items-center md:px-10 lg:px-36">
     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="w-full md:w-2/5">
-        <p class="text-lg text-green-600 font-medium">Know</p>
-        <p class="text-4xl font-black">About Us</p>
-        <p class="text-lg font-medium leading-relaxed pt-4">
-          Hasil roasting ini menghasilkan biji berwarna hitam mengkilap dengan
-          permukaan biji yang berminyak dan rasa sangat pahit ketika dikecap.
-          Semakin gelap warna roasting, maka semakin sedikit tingkat keasaman
-          yang kamu temukan pada minuman kopimu.
-        </p>
+      <div class="w-full md:w-2/5" data-sal="fade"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce">
+        <p class="text-lg text-green-600 font-medium">{{ $t("aboutPage.title") }}</p>
+        <p class="text-4xl font-black">{{ $t("menu[2]") }}</p>
+        <p class="text-lg pt-4">{{ $t("aboutPage.description") }}</p>
+        <p class="text-lg pt-2">{{ $t("aboutPage.thankGreeting") }}</p>
       </div>
-      <div class="w-full md:w-1/2 relative">
+      <div class="w-full md:w-1/2 relative" data-sal="fade"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce">
         <div
           class="w-full h-80 ring-4 ring-green-300 rounded-lg ring-inset"
         ></div>
@@ -44,15 +50,26 @@
       lg:px-36
     "
   >
-    <p class="text-2xl font-black">Visi</p>
-    <p class="text-2xl font-black">Misi</p>
+    <p class="text-3xl font-black">{{ $t("aboutPage.visi.title") }}</p>
+    <p class="text-lg">
+      {{ $t("aboutPage.visi.desc") }}
+    </p>
+    <p class="text-3xl font-black pt-5">{{ $t("aboutPage.misi.title") }}</p>
+    <div class="text-lg">
+      <p>{{ $t("aboutPage.misi.misi1") }}</p>
+      <p>{{ $t("aboutPage.misi.misi2") }}</p>
+      <p>{{ $t("aboutPage.misi.misi3") }}</p>
+    </div>
   </section>
 </template>
 
 <script>
+import sal from 'sal.js'
 export default {
   name: "Product",
-  components: {},
+  mounted() {
+    sal()
+  }
 };
 </script>
 

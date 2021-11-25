@@ -130,6 +130,7 @@ export default {
             name: this.nama,
             mail: this.email,
             message: this.pesan,
+            date: new Date().toLocaleString()
           });
         } catch (error) {
           this.firebaseError = error;

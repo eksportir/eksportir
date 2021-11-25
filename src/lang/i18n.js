@@ -5,10 +5,9 @@ const messages = {
     lang: "English",
     menu: ["Home", "Products", "About Us", "Contact"],
     contactButton: "Contact Now",
-    address: "Kartini Street No. 12, Selatpanjang Kota, 28753",
+    address: "Merbau Street, Selatpanjang Kota",
     city: "Kab. Kepulauan Meranti, Riau, Indonesia",
-    productsNav: "Explore",
-    productsNav2: "Our Products",
+    productsNav: "Explore Products",
     heroSection: {
       title: "Trusted Quality Liberica Exporter",
       subtitle:
@@ -65,15 +64,29 @@ const messages = {
       phone: "+628 0000 0000",
       mail: "alamat@email.com",
     },
+    aboutPage: {
+      title: "Know",
+      description: "S. Exporters are exporters of leading commodities in one of the regencies in Riau, namely the Meranti Islands. built by people who share the same vision, and manage to serve clients professionally.",
+      thankGreeting: "We are very grateful for all our partners and clients, Following the moment and will always serve the best for all.",
+      visi: {
+        title: "Vision",
+        desc: "Become an exporter with world quality customer service and advance the economy together",
+      },
+      misi: {
+        title: "Mision",
+        misi1: "Build good relationships with clients and partners",
+        misi2: "Always provide requests with good quality and guaranteed",
+        misi3: "Build and have a professional team"
+      }
+    }
   },
   id: {
     lang: "Indonesia",
     menu: ["Beranda", "Produk", "Tentang Kami", "Kontak"],
     contactButton: "Hubungi Sekarang",
-    address: "Jalan Kartini No. 12, Selatpanjang Kota, 28753",
+    address: "Jalan Merbau, Selatpanjang Kota",
     city: "Kab. Kepulauan Meranti, Riau, Indonesia",
-    productsNav: "Jelajahi",
-    productsNav2: "Produk Kami",
+    productsNav: "Jelajahi Produk",
     heroSection: {
       title: "Eksportir Liberika Kualitas Terpercaya",
       subtitle:
@@ -130,6 +143,21 @@ const messages = {
       phone: "+628 0000 0000",
       mail: "alamat@email.com",
     },
+    aboutPage: {
+      title: "Ketahui",
+      description: "S. Eksportir adalah pengekspor komoditas unggulan di salah satu kabupaten di Provinsi Riau, yaitu Kepulauan Meranti. dibangun oleh orang-orang yang memiliki visi yang sama, dan mengelola untuk melayani klien dengan profesional.",
+      thankGreeting: "Kami sangat berterima kasih untuk semua mitra dan klien kami, Mengikuti momen dan akan selalu melayani yang terbaik untuk semua.",
+      visi: {
+        title: "Visi",
+        desc: "Menjadi pengekspor dengan layanan pelanggan kualitas dunia dan memajukan ekonomi bersama",
+      },
+      misi: {
+        title: "Misi",
+        misi1: "Membangun hubungan baik bersama client dan partner",
+        misi2: "Selalu menyediakan permintaan dengan kualitas baik dan terjamin",
+        misi3: "Membangun dan memiliki tim yang profesional"
+      }
+    }
   },
 };
 

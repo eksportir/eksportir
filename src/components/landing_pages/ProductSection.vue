@@ -135,7 +135,7 @@
   </section>
   <section
     class="bg-green-600 py-10 px-4 md:px-6 lg:px-36 space-y-20"
-    data-sal="zoom-in"
+    data-sal="fade"
     data-sal-delay="300"
     data-sal-duration="800"
     data-sal-easing="ease-out-bounce"
@@ -163,7 +163,11 @@
 </template>
 
 <script>
+import sal from "sal.js";
 export default {
   name: "ProductSection",
+  mounted() {
+    sal();
+  },
 };
 </script>

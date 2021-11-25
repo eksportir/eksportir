@@ -6,14 +6,21 @@
       style="
         background-image: url(https://ik.imagekit.io/n0t5masg5jg/bg_coffee_v1uve0BSv.jfif?updatedAt=1637636563607);
       "
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce"
     >
       <p class="text-5xl font-bold leading-normal">{{ $t("productsNav") }}</p>
-      <p class="text-5xl font-bold">{{ $t("productsNav2") }}</p>
     </div>
   </section>
 
   <section class="px-4 py-20 md:py-32 md:px-10 lg:px-36 space-y-6">
     <div
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce"
     >
       <p class="text-lg font-medium text-gray-600">
         {{ $t("productSection.smallTitle") }}
@@ -25,6 +32,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div
         class="product-card-wrapper"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="800"
+        data-sal-easing="ease-out-bounce"
       >
         <img
           class="rounded-lg rounded-b-none"
@@ -33,12 +44,8 @@
           loading="lazy"
         />
         <div class="p-4 space-y-2">
-          <h1 class="text-2xl font-bold text-green-900">Biji Kopi Liberika</h1>
-          <p class="font-normal leading-5">
-            Merupakan salah satu biji kopi di kepulauan meranti, biji kopi
-            berjenis liberika ini memiliki aroma yang khas yaitu aroma nangka
-            dan coklat.
-          </p>
+          <h1 class="text-2xl font-bold text-green-900">{{ $t("productSection.productTitle") }}</h1>
+          <p class="font-normal leading-5">{{ $t("productSection.description") }}</p>
           <!-- <button class="product-button">Selengkapnya</button> -->
         </div>
       </div>
@@ -81,9 +88,12 @@
 </template>
 
 <script>
+import sal from "sal.js";
 export default {
   name: "Product",
-  components: {},
+  mounted() {
+    sal();
+  },
 };
 </script>
 

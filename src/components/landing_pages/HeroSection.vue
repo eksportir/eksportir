@@ -83,11 +83,15 @@
 </template>
 
 <script>
+import sal from 'sal.js'
 import RighArrowIcon from "./../icons/RightArrowIcon.vue";
 
 export default {
   name: "HeroSection",
   components: { RighArrowIcon },
+  mounted() {
+    sal()
+  }
 };
 </script>
 

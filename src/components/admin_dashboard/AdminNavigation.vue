@@ -120,7 +120,7 @@ export default {
     signOut: function () {
       signOut(auth)
         .then(() => {
-          this.$router.replace({ path: "/login" });
+          this.$router.replace({ path: "/" });
         })
         .catch((error) => {
           console.log(error);

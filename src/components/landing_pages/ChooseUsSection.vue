@@ -57,7 +57,7 @@
 </template>
 
 <script>
-
+import sal from 'sal.js'
 import ChooseCard from "./ChooseCard.vue";
 import DocumentIcon from "./../icons/DocumentIcon.vue";
 import DollarIcon from "./../icons/DollarIcon.vue";
@@ -65,6 +65,9 @@ import ShieldIcon from "./../icons/ShieldIcon.vue";
 export default {
   name: "ChooseUsSection",
   components: { ChooseCard, DocumentIcon, DollarIcon, ShieldIcon },
+  mounted() {
+    sal()
+  }
 };
 </script>
 

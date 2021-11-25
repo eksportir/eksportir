@@ -1,10 +1,12 @@
 <template>
   <section class="py-20 px-4 md:px-6 lg:px-36 space-y-10 md:space-y-20">
-    <p class="text-4xl font-black text-center"
-    data-sal="fade"
-    data-sal-delay="300"
-    data-sal-duration="800"
-    data-sal-easing="ease-out-bounce">
+    <p
+      class="text-4xl font-black text-center"
+      data-sal="fade"
+      data-sal-delay="300"
+      data-sal-duration="800"
+      data-sal-easing="ease-out-bounce"
+    >
       {{ $t("getTouchSection.mainTitle") }}
     </p>
     <div
@@ -17,41 +19,66 @@
         md:space-y-0
       "
     >
-      <div class="w-full md:w-1/3 space-y-2"
-      data-sal="slide-up"
-    data-sal-delay="300"
-    data-sal-duration="800"
-    data-sal-easing="ease-out-bounce">
+      <div
+        class="w-full md:w-1/3 space-y-2"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="800"
+        data-sal-easing="ease-out-bounce"
+      >
         <p class="text-2xl font-bold">{{ $t("getTouchSection.title") }}</p>
         <p class="text-lg font-medium leading-snug">
           {{ $t("getTouchSection.subtitle") }}
         </p>
         <div class="flex w-full gap-4">
-          <a target="_blank" href="https://facebook.com/s.eksportir" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
+          <a
+            target="_blank"
+            href="https://facebook.com/s.eksportir"
+            class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4"
+          >
             <img
               src="./../../assets/icons8-facebook-f-500.png"
               class="w-6"
               alt="facebook icon"
             />
           </a>
-          <a target="_blank" href="https://instagram.com/s.eksportir" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
-            <img src="./../../assets/instagram.png" class="w-6" alt="instagram icon" />
+          <a
+            target="_blank"
+            href="https://instagram.com/s.eksportir"
+            class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4"
+          >
+            <img
+              src="./../../assets/instagram.png"
+              class="w-6"
+              alt="instagram icon"
+            />
           </a>
-          <a target="_blank" href="https://wa.me/+6282170548877" class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4">
-            <img src="./../../assets/whatsapp.png" class="w-6" alt="whatsapp icon" />
+          <a
+            target="_blank"
+            href="https://wa.me/+6282170548877"
+            class="bg-white hover:bg-green-100 rounded-full hover:shadow-md p-4"
+          >
+            <img
+              src="./../../assets/whatsapp.png"
+              class="w-6"
+              alt="whatsapp icon"
+            />
           </a>
         </div>
       </div>
-      <div class="form-wrapper" data-sal="slide-up"
-    data-sal-delay="300"
-    data-sal-duration="800"
-    data-sal-easing="ease-out-bounce">
+      <div
+        class="form-wrapper"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="800"
+        data-sal-easing="ease-out-bounce"
+      >
         <!-- Empty State -->
         <div
           v-if="isSending"
           class="flex flex-col justify-center w-full px-2 md:px-24 py-24"
         >
-          <smiley-icon/>
+          <smiley-icon />
           <p class="text-center font-semibold text-lg">
             Terima kasih telah mengirimkan pesan, akan kami tanggapi dalam waktu
             dekat.
@@ -59,7 +86,7 @@
         </div>
         <!-- Form -->
         <loading v-if="loading" class="w-full" />
-        <div v-if="!loading && !isSending" class="p-4 space-y-2" >
+        <div v-if="!loading && !isSending" class="p-4 space-y-2">
           <p>{{ firebaseError }}</p>
           <div class="w-full space-y-1">
             <p :class="errors.includes('name') ? 'text-error' : ''">
@@ -107,6 +134,7 @@
 </template>
 
 <script>
+import sal from 'sal.js'
 import Loading from "./../commons_component/Loading.vue";
 import SmileyIcon from "./../icons/SmileyIcon.vue";
 import app from "./../../firebaseInit";
@@ -127,6 +155,9 @@ export default {
       isSending: false,
     };
   },
+  mounted() {
+    sal()
+  },
   methods: {
     submitMessage: async function () {
       if (this.name && this.mail && this.message) {
@@ -136,6 +167,7 @@ export default {
             name: this.name,
             mail: this.mail,
             message: this.message,
+            date: new Date().toLocaleString()
           });
         } catch (error) {
           this.firebaseError = error;

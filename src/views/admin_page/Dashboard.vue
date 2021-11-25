@@ -28,9 +28,15 @@
               <p class="text-lg font-semibold">{{ message.name }}</p>
               <p class="text-sm">{{ message.mail }}</p>
             </div>
-            <div class="flex-1 h-full border-r-2 p-2 md:p-4">
+            <div class="flex-1 h-full p-2 md:p-4">
               <p class="text-lg font-semibold">{{ message.message }}</p>
             </div>
+            <div class="flex-initial p-4">
+              <p class="text-lg font-semibold">{{ message.date }}</p>
+            </div>
+          </div>
+          <div>
+            
           </div>
         </li>
       </ul>
@@ -64,6 +70,7 @@ export default {
               name: doc.data().name,
               mail: doc.data().mail,
               message: doc.data().message,
+              date: doc.data().date,
             });
           });
         })
