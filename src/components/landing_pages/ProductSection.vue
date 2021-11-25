@@ -32,7 +32,7 @@
           <img
             src="./../../assets/biji_kopi_meranti.jpg"
             class="w-2/3 xl:w-1/2 -mt-6 rounded-lg shadow-lg"
-            alt=""
+            alt="biji kopi liberika meranti"
             data-sal="slide-right"
             data-sal-delay="300"
             data-sal-duration="800"
@@ -52,7 +52,7 @@
               rounded-lg
               shadow-lg
             "
-            alt=""
+            alt="biji kopi liberika meranti"
             data-sal="slide-left"
             data-sal-delay="300"
             data-sal-duration="800"
@@ -82,7 +82,7 @@
         <img
           src="./../../assets/orang_meranti_kopi.jpg"
           class="block md:hidden w-full object-cover rounded-lg shadow-lg"
-          alt=""
+          alt="biji kopi liberika meranti"
         />
       </div>
     </div>
@@ -106,7 +106,7 @@
         <img
           src="./../../assets/green_bean_meranti.jpg"
           class="rounded-lg shadow-md w-full"
-          alt=""
+          alt="biji kopi liberika meranti"
           data-sal="slide-up"
           data-sal-delay="300"
           data-sal-duration="800"
@@ -124,7 +124,7 @@
         <img
           src="./../../assets/green_bean_meranti.jpg"
           class="absolute rounded-lg shadow-md w-full h-64 top-6 right-6"
-          alt=""
+          alt="biji kopi liberika meranti"
           data-sal="slide-left"
           data-sal-delay="300"
           data-sal-duration="800"

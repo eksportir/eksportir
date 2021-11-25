@@ -75,7 +75,7 @@
         <img
           src="./../../assets/liberika_meranti.jpg"
           class="object-cover w-full rounded-md"
-          alt=""
+          alt="biji kopi liberika meranti"
         />
       </div>
     </div>
